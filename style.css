@@ -29,14 +29,14 @@ body{
     content: '';
     position: absolute;
     background: white;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     top: 48%;
     left: 48%;
     z-index: 1000;
 }
-.hour{
+#hour{
     position: absolute;
     background: rgb(179, 8, 8);
     width: 7px;
@@ -46,7 +46,7 @@ body{
     z-index: -10;
     border-radius: 5px;
 }
-.minute{
+#minute{
     position: absolute;
     background: white;
     width: 5px;
@@ -55,13 +55,18 @@ body{
     left: 49.5%;
    border-radius: 5px;
 }
-.second{
+#second{
     position: absolute;
     background: rgb(10, 103, 234);
     width: 3px;
     height: 40%;
-    top: 15%;
+    top: 11%;
     left: 49.5%;
     border-radius: 5px;
     z-index: 10;
+}
+#hour,
+#minute,
+#second{
+    transform-origin: bottom;
 }
